@@ -11,7 +11,7 @@
 	--bg-color: #ffffff;
 	--second-bg-color: #3f3f3f;
 	--text-color: rgb(0, 0, 0);
-	--second-color: #ccc;
+	--second-color: rgb(61, 61, 61);
 	--main-color: #05daff;
 	--big-font: 5rem;
 	--h2-font: 3rem;
@@ -34,19 +34,32 @@ header{
 	padding: 22px 15%;
 	border-bottom: 1px solid transparent;
 	transition: all .45s ease;
+	
 }
+/* .horizontalgap {
+	/* float: left; */
+	/* overflow: hidden; 
+	height: 0px;
+	width: 10px; */
+  /* } */ 
 
 .logobg{
-	width: 10%;
-	height: auto;
+	/* width: 8%;
+	height: 2%; */
 	align-items: center;
 }
 .logo{
 	color: var(--text-color);
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	align-content: center;
 }
+.logo img{
+	width: 1.5em;
+}
+
+
 span{
 	color: var(--main-color);
 }
@@ -82,10 +95,13 @@ section{
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	border-radius: 58px;
+	/* border-radius: 58px; */
 	cursor: pointer;
 	height: 100vh;
 	width: 100%;
+	background-image: url(../img/bg\ docs.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	/* background-image: url(../img/bg.png); */
 	/* background-size: 60%; */
 	background-position: center;
@@ -117,6 +133,13 @@ section{
 	color: var(--second-color);
 	font-size: 20px;
 	font-weight: 500;
+}
+.home-text{
+	/* background-color: #ffffff; */
+	padding: 26px;
+	backdrop-filter: blur(10px);
+  	background-color: rgba(255, 255, 255, 0.5);
+  	opacity: 0.8;
 }
 .home-text h1{
 	font-size: var(--big-font);
@@ -220,7 +243,11 @@ header.sticky{
 }
 
 .services{
-	background: var(--second-bg-color);
+	/* background: var(--second-bg-color); */
+	/* background-image: url(../img/bg\ docs.jpg);
+	background-size: cover;
+	background-attachment: fixed; */
+	background-color: #859a96;
 }
 .main-text{
 	text-align: center;
@@ -267,7 +294,8 @@ header.sticky{
 	display: inline-block;
 	padding: 8px 18px;
 	background: #333333;
-	color: var(--second-color);
+	/* color: var(--second-color); */
+	color: #ffffff;
 	font-size: 14px;
 	font-weight: 500;
 	border-radius: 8px;
@@ -379,12 +407,12 @@ header.sticky{
 }
 .list li a{
 	display: block;
-	color: var(--second-color);
+	color: #ffffff;
 	font-size: 14px;
 	transition: all .45s ease;
 }
 .list li a:hover{
-	color: var(--text-color);
+	color: #05daff;
 	transform: translateX(5px);
 }
 .contact-icons i{
@@ -506,6 +534,9 @@ form textarea{
 	}
 	.contact{
 		grid-template-columns: 1fr;
+	}
+	.logo{
+		font-size: 22px;
 	}
 }
 
